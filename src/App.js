@@ -109,7 +109,7 @@ const HtmlStructure = () => {
         console.log("promise fulfilled1")
         setGeoList(response.data[0])
         return axios.get(`https://api.openweathermap.org/data/2.5/` +
-        `onecall?lat=${response.data[0].lat}&lon=${response.data[0].lon}&units=imperial&appid=${process.env.REACT_APP_API_KEY}`)
+        `onecall?lat=${response.data[0].lat}&lon=${response.data[0].lon}&units=imperial&appid=00ca7eb450d6e95d29159e16c12adbca`)
       }) //an example of chaining axios get calls must use response.data for sequential intended results
       .then(response => {
         console.log('promised fulfilled2')
